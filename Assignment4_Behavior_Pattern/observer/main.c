@@ -6,7 +6,6 @@
 #include "subscribers/alarm_system_controller.h"
 #include "subscribers/hvac_system.h"
 #include "subscribers/event_recording.h"
-
 #include <stdio.h>
 
 int main() {
@@ -71,7 +70,7 @@ int main() {
     motion_sensor_trigger(&motion_sensor, DETECTED_MOTION);
 
     printf("\n== Simulate Temperature Notification Event ==\n");
-    temperature_sensor_trigger(&temperature_sensor, 28);
+    temperature_sensor_trigger(&temperature_sensor, TEMPERATURE_SIMULATE);
 
     return 0;
 }

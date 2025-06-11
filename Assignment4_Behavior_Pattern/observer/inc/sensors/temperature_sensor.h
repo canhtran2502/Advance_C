@@ -4,6 +4,7 @@
 #include "../subscriber_publisher.h"
 
 #define MAX_CHARACTER (100)
+#define TEMPERATURE_SIMULATE (28)
 
 // Temperature sensor struct
 typedef struct {
